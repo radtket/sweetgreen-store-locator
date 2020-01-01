@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "parcel src/index.html --open",
-		"build": "parcel build index.html --public-url /sweetgreen-store-locator/",
-		"predeploy": "yarn build",
+		"build": "parcel build src/index.html --public-url /sweetgreen-store-locator/",
+		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
 	},
 	"homepage": "http://radtket.github.io/sweetgreen-store-locator",
