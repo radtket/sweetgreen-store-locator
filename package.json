@@ -1,12 +1,15 @@
 {
-	"name": "jova-construction-site",
+	"name": "sweetgreen-store-locator",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"start": "parcel src/index.html --open",
-		"build": "parcel build src/*.html"
+		"build": "parcel build index.html --public-url /sweetgreen-store-locator/",
+		"predeploy": "yarn build",
+		"deploy": "gh-pages -d dist"
 	},
+	"homepage": "http://radtket.github.io/sweetgreen-store-locator",
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
@@ -14,6 +17,7 @@
 		"@babel/polyfill": "^7.7.0",
 		"@mapbox/mapbox-gl-geocoder": "^4.5.1",
 		"@turf/turf": "^5.1.6",
+		"gh-pages": "^2.1.1",
 		"mapbox-gl": "^1.6.1"
 	},
 	"devDependencies": {
